@@ -54,14 +54,14 @@ class Blockchain:
                 break
             else:
                 block.nonce += 1
-    
+
     def show(self):
         if not self.head:
             self.head = self.block
         while self.head:
             print(self.head)
             self.head = self.head.next
-        
+
 
 def _main():
     blockchain = Blockchain()
